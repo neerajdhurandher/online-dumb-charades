@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Dumb Charades</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Online Dumb Charades</h1>
+        <div class="form-group">
+            <label for="nameSelect">Select Your Name:</label>
+            <select id="nameSelect" onchange="handleNameSelect()">
+                <option hidden>Select your name</option>
+            </select>
+        </div>
+
+        <div class="form-group" id="selectMovieGroup" style="display: none;">
+            <label for="movieSelect">Select Movie:</label>
+            <select id="movieSelect" onchange="handleMovieSelect()">
+                <option hidden>Select a movie</option>
+            </select>
+            <button id="movie_select_button" style="display: none;">Select</button>
+            <button id="movie_reset_button" style="display: none;">Reset Movie list</button>
+        </div>
+
+        <div class="form-group add-user-class">
+            <label for="addUserName">Add User Name:</label>
+            <input type="text" id="addUserName">
+            <button onclick="addUserName()">Add User</button>
+        </div>
+
+        <div class="form-group add-movie-class">
+            <label for="addMovieName">Add Movie Name:</label>
+            <input type="text" id="addMovieName">
+            <button onclick="addMovieName()">Add Movie</button>
+        </div>
+    </div>
+    <div class="footer">
+        <a href="https://neerajdhurandher.me" target="_blank"></a><img src="./neeraj_logo_svg.svg" alt="Neeraj"
+            style="cursor: pointer;"></a>
+        <h2>Made with &#9829; </h2>
+        <a href="https://neerajdhurandher.me" target="_blank" style="color: #FFE600; margin-left: 6px;">Checkout
+            this</a>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
